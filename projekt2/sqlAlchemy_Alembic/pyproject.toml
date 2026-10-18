@@ -1,0 +1,20 @@
+[project]
+name = "sqlalchemy-alembic"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Patryk Pieklo", email = "patryk.pieklo@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "alembic>=1.20.0",
+    "sqlalchemy>=2.1.5",
+]
+
+[project.scripts]
+sqlalchemy-alembic = "sqlalchemy_alembic:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
